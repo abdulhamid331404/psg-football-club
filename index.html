@@ -4,14 +4,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FIFA</title>
+  <title>PSG</title>
+  <!-- linked bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- link favicon -->
     <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+  <!-- body and header style -->
+    <style>
+      body{
+        background-color:dimgray ;
+  
+      }
+      header{
+        background-color:black ;
+      }
+    </style>
 </head>
 
-<body style="background-color:dimgray ;">
-  <header style="background-color:black ;" class="container-fluid mb-5 ">
+<body>
+  <!--  start header part-->
+  <header class="container-fluid mb-5 ">
     <section class="bg-black">
       <div class="row">
         <div class="col-6 col-md-4 col-lg-3">
@@ -37,10 +50,15 @@
       </div>
     </section>
   </header>
+  <!-- end header part -->
+
+  <!-- main part -->
   <main class="container mt-5">
     <div class="row">
+      
       <div class="col-lg-8">
         <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- start single player card -->
           <div class="col">
             <div class="card h-100">
               <img src="images/massi.png" class="card-img-top" alt="...">
@@ -57,7 +75,7 @@
               <img src="images/naymar.png" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <h3 class="card-title">Neymar Jr</h3>
-                <h6 class="card-text">36 Goals <span>.</span> <span>120 Assist</span></h6>
+                <h6 class="card-text">55 Goals <span>.</span> <span>170 Assist</span></h6>
                 <button onclick="selectPlayer(this);this.disabled = true" class="w-100 p-2 mt-2 bg-primary"
                   type="submit">SELECT</button>
               </div>
@@ -68,7 +86,7 @@
               <img src="images/mbappe.png" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <h3 class="card-title">Kylian Mbappé</h3>
-                <h6 class="card-text">36 Goals <span>.</span> <span>120 Assist</span></h6>
+                <h6 class="card-text">310 Goals <span>.</span> <span>220 Assist</span></h6>
                 <button onclick="selectPlayer(this);this.disabled = true" class="w-100 p-2 mt-2 bg-primary"
                   type="submit">SELECT</button>
               </div>
@@ -79,7 +97,7 @@
               <img src="images/dmaria.jpg" class="card-img-top img-fluid" alt="...">
               <div class="card-body text-center">
                 <h3 class="card-title">Ángel Di María</h3>
-                <h6 class="card-text">36 Goals <span>.</span> <span>120 Assist</span></h6>
+                <h6 class="card-text">360 Goals <span>.</span> <span>110 Assist</span></h6>
                 <button onclick="selectPlayer(this);this.disabled = true" class="w-100 p-2 mt-2 bg-primary"
                   type="submit">SELECT</button>
               </div>
@@ -90,7 +108,7 @@
               <img src="images/maradona.jpg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <h3 class="card-title">Maradona</h3>
-                <h6 class="card-text">36 Goals <span>.</span> <span>120 Assist</span></h6>
+                <h6 class="card-text">39 Goals <span>.</span> <span>150 Assist</span></h6>
                 <button onclick="selectPlayer(this);this.disabled = true" class="w-100 p-2 mt-2 bg-primary"
                   type="submit">SELECT</button>
               </div>
@@ -101,7 +119,7 @@
               <img src="images/pele.jpg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <h3 class="card-title">Pelé</h3>
-                <h6 class="card-text">36 Goals <span>.</span> <span>120 Assist</span></h6>
+                <h6 class="card-text">42 Goals <span>.</span> <span>220 Assist</span></h6>
                 <button onclick="selectPlayer(this);this.disabled = true" class="w-100 p-2 mt-2 bg-primary"
                   type="submit">SELECT</button>
               </div>
@@ -112,7 +130,7 @@
               <img src="images/kaka.jpg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <h3 class="card-title">Kaka</h3>
-                <h6 class="card-text">36 Goals <span>.</span> <span>120 Assist</span></h6>
+                <h6 class="card-text">58 Goals <span>.</span> <span>210 Assist</span></h6>
                 <button onclick="selectPlayer(this);this.disabled = true" class="w-100 p-2 mt-2 bg-primary"
                   type="submit">SELECT</button>
               </div>
@@ -124,7 +142,7 @@
               <div class="card-body text-center">
                 <h3 class="card-title">Luis Suárez
                 </h3>
-                <h6 class="card-text">36 Goals <span>.</span> <span>120 Assist</span></h6>
+                <h6 class="card-text">35 Goals <span>.</span> <span>100 Assist</span></h6>
                 <button onclick="selectPlayer(this);this.disabled = true" class="w-100 p-2 mt-2 bg-primary"
                   type="submit">SELECT</button>
               </div>
@@ -135,7 +153,7 @@
               <img src="images/ozil.jpg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <h3 class="card-title">Mesut Özil</h3>
-                <h6 class="card-text">36 Goals <span>.</span> <span>120 Assist</span></h6>
+                <h6 class="card-text">33 Goals <span>.</span> <span>160 Assist</span></h6>
                 <button onclick="selectPlayer(this);this.disabled = true" class="w-100 p-2 mt-2 bg-primary"
                   type="submit">SELECT</button>
               </div>
@@ -144,6 +162,7 @@
 
         </div>
       </div>
+      <!-- this part of player selected  calculate par player cost and also  calculated by total cost  -->
       <div class="col-lg-4">
         <div class="bg-black mb-5 border rounded col h-25">
           <div class="text-white">
@@ -176,9 +195,10 @@
             <div>
               <button id="calculate-btn" class="w-100 p-2 bg-primary" type="submit">Calculate</button>
             </div>
-            <div class="mt-4 d-flex justify-content-around">
+            <div class="mt-4 d-flex justify-content-between">
               <h5>Player Expenses
-                $ <span id="player-expenses">0</span></h5>
+                </h5>
+                <h5>$<span id="player-expenses">0</span></h5>
             </div>
             <div class="d-flex  align-items-center justify-content-center">
               <p class="mt-3">Manager</p>
@@ -192,19 +212,22 @@
               <button id="calculate-total" class="w-100 p-2 bg-primary" type="submit">Calculate Total</button>
             </div>
             <div class=" d-flex justify-content-between mt-4">
-              <h6>Total</h6>
-              <h6 class="text-danger">$<span id="Total-balance">0</span></h6>
+              <h5>Total</h5>
+              <h5 class="text-danger">$<span id="Total-balance">0</span></h5>
             </div>
           </div>
         </div>
       </div>
     </div>
   </main>
+  <!-- end main part -->
+  <!-- this part of footer -->
   <footer class="text-center h-100 w-100 bg-black text-white p-5 mt-5">
     <p>Copyright @ 2022 All Rights Reserved.</p>
   </footer>
-
+<!-- linked by main js fiel -->
   <script src="js/main.js"></script>
+  <!-- bootstrap js fiel -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
