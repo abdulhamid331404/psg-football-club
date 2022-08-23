@@ -1,10 +1,3 @@
-// input field by get value
-function getInputFuildById(input) {
-    const getInputFuild = document.getElementById(input);
-    const getInputFuildString = getInputFuild.value
-    const getInputFuildNumber = parseInt(getInputFuildString);
-    return getInputFuildNumber;
-}
 
 // get Element to innerText
 function getElementTextById(inputElementId) {
@@ -13,6 +6,14 @@ function getElementTextById(inputElementId) {
     const getElementNumber = parseInt(getElementString)
     return getElementNumber
 
+}
+
+// input field by get value
+function getInputFieldById(input) {
+    const getInputFuild = document.getElementById(input);
+    const getInputFuildString = getInputFuild.value
+    const getInputFuildNumber = parseInt(getInputFuildString);
+    return getInputFuildNumber;
 }
 
 // set get element by id 
@@ -40,7 +41,7 @@ function selectPlayer(playerId) {
 
 // calclulate player cost
 document.getElementById("calculate-btn").addEventListener("click", function () {
-    const getPerPlayerCost = getInputFuildById("per-player-cost")
+    const getPerPlayerCost = getInputFieldById("per-player-cost")
     if (isNaN(getPerPlayerCost)) {
         alert("Please enter the number")
     }
@@ -55,8 +56,8 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
 // calclulate total players the cost 
 document.getElementById("calculate-total").addEventListener("click", function () {
     const getTotalCost = getElementTextById("player-expenses");
-    const getManagerfuildValue = getInputFuildById("manager-amount");
-    const getCoachfuildValue = getInputFuildById("coach-amount");
+    const getManagerfuildValue = getInputFieldById("manager-amount");
+    const getCoachfuildValue = getInputFieldById("coach-amount");
     if (isNaN(getManagerfuildValue) || isNaN(getCoachfuildValue)) {
         alert("Please enter the valid number")
     }
